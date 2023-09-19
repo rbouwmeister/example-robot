@@ -18,7 +18,7 @@ Orders robots from RobotSpareBin Industries Inc
     Download the csv file
     Get orders and fill the form
     Create ZIP archive
-    [Teardown]    Log out and close the browser
+    [Teardown]    Close the browser
 
 *** Keywords ***
 Download the csv file
@@ -86,5 +86,5 @@ Create ZIP archive
     ${zip_file_name}=    Set Variable    ${OUTPUT_DIR}${/}pdfs.zip
     Archive Folder With Tar    ${OUTPUT_DIR}${/}receipts    ${zip_file_name}
 
-Log out and close the browser
+Close the browser
     Close Browser
